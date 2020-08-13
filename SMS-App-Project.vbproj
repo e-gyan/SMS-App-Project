@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D125C224-A645-41C8-A3EE-60833BADB5E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SMS_App_Project.My.MyApplication</StartupObject>
+    <RootNamespace>SMS_App_Project</RootNamespace>
+    <AssemblyName>SMS-App-Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SMS-App-Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SMS-App-Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Resources" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminPage.Designer.vb">
+      <DependentUpon>AdminPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdmin-Academics.Designer.vb">
+      <DependentUpon>frmAdmin-Academics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdmin-Academics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdmin-Account.Designer.vb">
+      <DependentUpon>frmAdmin-Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdmin-Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdmin-Staff.Designer.vb">
+      <DependentUpon>frmAdmin-Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdmin-Staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdmin-Student.Designer.vb">
+      <DependentUpon>frmAdmin-Student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdmin-Student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Staff\frmStaff-Course.Designer.vb">
+      <DependentUpon>frmStaff-Course.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\frmStaff-Course.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\frmStaff-PersonalRecord.Designer.vb">
+      <DependentUpon>frmStaff-PersonalRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\frmStaff-PersonalRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\frmStudent-Academics.Designer.vb">
+      <DependentUpon>frmStudent-Academics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student\frmStudent-Academics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\frmStudent-Payment.Designer.vb">
+      <DependentUpon>frmStudent-Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student\frmStudent-Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\frmStudent-PersonalRecord.Designer.vb">
+      <DependentUpon>frmStudent-PersonalRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student\frmStudent-PersonalRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Management_SystemDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Student_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Management_SystemDataSet.vb">
+      <DependentUpon>Student_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefined\SQLTemplate.vb" />
+    <Compile Include="Staff\StaffPage.Designer.vb">
+      <DependentUpon>StaffPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\StaffPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\StudentPage.Designer.vb">
+      <DependentUpon>StudentPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\AdminPage.resx">
+      <DependentUpon>AdminPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdmin-Academics.resx">
+      <DependentUpon>frmAdmin-Academics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdmin-Account.resx">
+      <DependentUpon>frmAdmin-Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdmin-Staff.resx">
+      <DependentUpon>frmAdmin-Staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdmin-Student.resx">
+      <DependentUpon>frmAdmin-Student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\frmStaff-Course.resx">
+      <DependentUpon>frmStaff-Course.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\frmStaff-PersonalRecord.resx">
+      <DependentUpon>frmStaff-PersonalRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\StaffPage.resx">
+      <DependentUpon>StaffPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\frmStudent-Academics.resx">
+      <DependentUpon>frmStudent-Academics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\frmStudent-Payment.resx">
+      <DependentUpon>frmStudent-Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\frmStudent-PersonalRecord.resx">
+      <DependentUpon>frmStudent-PersonalRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentPage.resx">
+      <DependentUpon>StudentPage.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Student_Management_SystemDataSet.xsc">
+      <DependentUpon>Student_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Student_Management_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Student_Management_SystemDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Student_Management_SystemDataSet.xss">
+      <DependentUpon>Student_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\profilePicture.ico" />
+    <None Include="Resources\showHidePin1.ico" />
+    <None Include="Resources\profilePicture1.ico" />
+    <Content Include="Resources\showHidePin.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
