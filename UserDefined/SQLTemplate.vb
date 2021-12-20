@@ -7,7 +7,7 @@ Public Class SQLTemplate
     Private SqlCmd As SqlCommand
 
     Public Sub HasConnected()
-        Dim sqlString As String = "Server=workspace-pc\egyansqlserver; Initial Catalog=Student Management System;Integrated Security=True"
+        Dim sqlString As String = "Server=labwork-pc; Initial Catalog=Student Management System_New;Integrated Security=True"
 
         SqlCon = New SqlConnection(sqlString)
         Try
