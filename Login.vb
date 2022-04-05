@@ -10,6 +10,7 @@ Public Class frmLogin
         SQL.HasConnected()
     End Sub
 
+
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
 
         If radAdmin.Checked = True Then
